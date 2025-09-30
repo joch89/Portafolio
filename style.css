@@ -33,14 +33,15 @@ h1 {
 }
 
 .social-buttons a {
-  margin: 0 10px;
+  margin: 0 8px;
   background-color: #ffffff;
   color: #005a9c;
   border: 2px solid #ffffff;
-  padding: 8px 14px;
+  padding: 6px 12px;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
+  font-size: 0.85rem;
   transition: all 0.3s ease;
 }
 
@@ -57,6 +58,53 @@ main {
   margin: auto;
 }
 
+/* ----------- SECCIÓN SOBRE MÍ ----------- */
+.about-me {
+  margin: 50px 0;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about-photo {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #005a9c;
+}
+
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-text {
+  flex: 1 1 250px;
+  text-align: justify;
+}
+
+.about-text h2 {
+  color: #005a9c;
+  margin-bottom: 10px;
+}
+
+/* Agrandamos un poco la foto en pantallas grandes */
+@media (min-width: 768px) {
+  .about-photo {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* ----------- PROYECTOS ----------- */
 .projects {
   margin-top: 50px;
   display: grid;
@@ -64,14 +112,13 @@ main {
   gap: 25px;
 }
 
-/* ----------- CARDS DE PROYECTO ----------- */
 .project-card {
   background-color: #ffffff;
   border: 1px solid #ccc;
   border-left: 6px solid #005a9c;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -87,6 +134,7 @@ main {
 .project-card p {
   margin: 10px 0;
   font-size: 0.95rem;
+  text-align: justify;
 }
 
 /* ----------- BOTONES DE CADA CARD ----------- */
@@ -96,14 +144,14 @@ main {
 
 .project-card .buttons a {
   display: inline-block;
-  margin: 5px 5px 0 0;
-  padding: 6px 12px; /* reducido */
+  margin: 4px 4px 0 0;
+  padding: 6px 10px;
   border-radius: 5px;
   background: linear-gradient(135deg, #005A9C, #007FD1);
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 0.85rem; /* reducido */
+  font-size: 0.85rem;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
@@ -153,56 +201,5 @@ footer a:hover {
 
   .project-card h3 {
     font-size: 1rem;
-  }
-}
-
-/* Sección Sobre mí */
-.about-me {
-  margin: 50px 0;
-}
-
-.about-container {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-/* Foto redonda responsiva */
-.about-photo {
-  flex-shrink: 0;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 3px solid #005a9c;
-}
-
-.about-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.about-text {
-  flex: 1 1 250px;
-}
-
-/* Justificar texto de Sobre mí */
-.about-text p {
-  text-align: justify;
-}
-
-.about-text h2 {
-  color: #005a9c;
-  margin-bottom: 10px;
-}
-
-/* En pantallas grandes agrandamos un poco la foto */
-@media (min-width: 768px) {
-  .about-photo {
-    width: 200px;
-    height: 200px;
   }
 }
