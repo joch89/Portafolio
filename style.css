@@ -155,3 +155,33 @@ footer a:hover {
     font-size: 1rem;
   }
 }
+
+/* Sección Sobre mí */
+.about-me {
+  margin: 50px 0;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about-photo img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #005a9c;
+}
+
+.about-text {
+  flex: 1 1 250px;
+}
+
+.about-text h2 {
+  color: #005a9c;
+  margin-bottom: 10px;
+}
+
