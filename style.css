@@ -3,16 +3,16 @@
 
 body {
   font-family: 'Open Sans', 'Segoe UI', sans-serif;
-  background-color: #f9fbfd; /* neutro claro */
+  background-color: #f9fbfd;
   margin: 0;
   padding: 0;
-  color: #333; /* neutro oscuro */
+  color: #333;
   line-height: 1.6;
 }
 
 /* ----------- HEADER ----------- */
 header {
-  background-color: #005a9c; /* primario */
+  background-color: #005a9c;
   color: white;
   text-align: center;
   padding: 30px 20px;
@@ -97,13 +97,13 @@ main {
 .project-card .buttons a {
   display: inline-block;
   margin: 5px 5px 0 0;
-  padding: 8px 14px;
+  padding: 6px 12px; /* reducido */
   border-radius: 5px;
   background: linear-gradient(135deg, #005A9C, #007FD1);
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 0.85rem; /* reducido */
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
@@ -114,7 +114,7 @@ main {
 
 /* ----------- FOOTER ----------- */
 footer {
-  background-color: #222; /* neutro muy oscuro */
+  background-color: #222;
   color: white;
   text-align: center;
   padding: 15px 10px;
@@ -122,7 +122,7 @@ footer {
 }
 
 footer a {
-  color: #00b0ff; /* secundario */
+  color: #00b0ff;
   text-decoration: none;
 }
 
@@ -156,7 +156,7 @@ footer a:hover {
   }
 }
 
-/* ----------- SECCIÓN SOBRE MÍ ----------- */
+/* Sección Sobre mí */
 .about-me {
   margin: 50px 0;
 }
@@ -168,27 +168,28 @@ footer a:hover {
   flex-wrap: wrap;
 }
 
-/* Foto redonda responsiva y centrada en el rostro */
+/* Foto redonda responsiva */
 .about-photo {
-  flex-shrink: 0;       /* evita que se estire */
-  width: 150px;         /* tamaño base en móvil */
+  flex-shrink: 0;
+  width: 150px;
   height: 150px;
-  border-radius: 50%;   /* círculo perfecto */
-  overflow: hidden;     /* recorta lo que sobra */
+  border-radius: 50%;
+  overflow: hidden;
   border: 3px solid #005a9c;
-  display: flex;
-  align-items: center;  /* centra verticalmente la imagen */
-  justify-content: center; /* centra horizontalmente */
 }
 
 .about-photo img {
-  min-width: 80%;      /* asegura que cubra todo el contenedor */
-  min-height: 80%;
-  object-fit: cover;    /* rellena y recorta la imagen */
-  object-position: center top; /* centra el rostro hacia arriba */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
+.about-text {
+  flex: 1 1 250px;
+}
+
+/* Justificar texto de Sobre mí */
 .about-text p {
   text-align: justify;
 }
@@ -198,18 +199,10 @@ footer a:hover {
   margin-bottom: 10px;
 }
 
-/* Ajuste para pantallas grandes */
+/* En pantallas grandes agrandamos un poco la foto */
 @media (min-width: 768px) {
   .about-photo {
     width: 200px;
     height: 200px;
   }
 }
-
-
-
-
-
-
-
-
