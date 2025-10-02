@@ -60,9 +60,7 @@ main {
 
 /* ----------- SECCIÓN SOBRE MÍ ----------- */
 .about-me {
-  /* Estilo corregido para juntar con la siguiente sección */
-  margin: 0;
-  padding-bottom: 20px; 
+  margin: 50px 0;
 }
 
 .about-container {
@@ -106,29 +104,8 @@ main {
   }
 }
 
-/* ----------- CONTENEDOR DE PROYECTOS GENERAL ----------- */
-.projects-section-wrapper {
-  /* Clase para englobar el contenido de proyectos, creando una separación visual compacta */
-  margin: 20px 0;
-}
-
-.projects-container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px 20px;
-  background-color: #f4f7fb;
-  border-radius: 12px;
-}
-
-/* ESTILO CLAVE: Asegura que el H2 dentro de este contenedor esté centrado (como en tu imagen de referencia) */
-.projects-container h2 {
-  text-align: center; 
-  color: #005a9c;
-  margin-bottom: 30px;
-}
-
-/* ----------- GRID DE PROYECTOS (Reemplaza la clase .projects) ----------- */
-.projects-grid { 
+/* ----------- PROYECTOS ----------- */
+.projects {
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -159,18 +136,6 @@ main {
   font-size: 0.95rem;
   text-align: justify;
 }
-
-/* Estilo para listas dentro de proyectos ML */
-.project-card ul {
-  padding-left: 20px;
-  margin: 5px 0 15px 0;
-  font-size: 0.95rem;
-}
-
-.project-card li {
-  margin-bottom: 4px;
-}
-
 
 /* ----------- BOTONES DE CADA CARD ----------- */
 .project-card .buttons {
@@ -237,4 +202,22 @@ footer a:hover {
   .project-card h3 {
     font-size: 1rem;
   }
+}
+
+.projects-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+  background-color: #f4f7fb;
+  border-radius: 12px;
+}
+
+.projects-container h2 {
+  text-align: center;
+  color: #005a9c;
+  margin-bottom: 30px;
+}
+
+.project-card p {
+  text-align: justify;
 }
