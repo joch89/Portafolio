@@ -36,96 +36,98 @@
       </div>
     </section>
 
-        <section class="projects-ml" style="padding-top: 20px; padding-bottom: 20px;">
+        <section class="projects-section-wrapper" style="padding-top: 0;">
       <div class="projects-container">
         <h2>Proyectos de Machine Learning</h2>
 
-                <div class="project-card ml-project">
-          <h3>🧠 Predicción de Cáncer de Mama (Proyecto MLOps)</h3>
-          <p><strong>Descripción:</strong> Desarrollo de un pipeline completo de Machine Learning (MLOps) para la clasificación de tumores de mama (benignos/malignos) basado en el dataset de Wisconsin. Este proyecto se enfoca no solo en la precisión del modelo, sino también en la **automatización** y **puesta en producción** del mismo.</p>
-          <p><strong>Objetivos:</strong>
-          <ul>
-            <li>Implementar un modelo de clasificación con alta sensibilidad y especificidad.</li>
-            <li>Configurar un flujo de trabajo MLOps (Versionamiento de datos, entrenamiento, registro y despliegue).</li>
-            <li>Demostrar la capacidad de llevar un modelo de la experimentación a la producción.</li>
-          </ul>
-          </p>
-          <p><strong>Tecnologías utilizadas:</strong> Python, Scikit-learn, **MLflow** (para seguimiento de experimentos y registro de modelos), **DVC** (Data Version Control), Docker, GitHub Actions, Streamlit (para la interfaz de despliegue).</p>
-          <p><strong>Reflexión:</strong> "Este proyecto fue fundamental para comprender que la Ciencia de Datos en un entorno real no termina con el entrenamiento del modelo. La implementación de MLOps con **MLflow y DVC** me permitió aprender sobre la **trazabilidad** y la **reproducibilidad**, aspectos críticos en aplicaciones sensibles como la salud."</p>
-          <div class="buttons">
-            <a href="https://github.com/joch89/Prediccion-Cancer-de-mama" target="_blank">Código Fuente (GitHub)</a>
+        <div class="projects-grid">
+                    <div class="project-card">
+            <h3>🧠 Predicción de Cáncer de Mama (Proyecto MLOps)</h3>
+            <p><strong>Descripción:</strong> Desarrollo de un pipeline completo de **MLOps** para la clasificación de tumores de mama (benignos/malignos) basado en el dataset de Wisconsin. El enfoque está en la **automatización**, **trazabilidad** y **puesta en producción** del modelo.</p>
+            <p><strong>Objetivos:</strong>
+            <ul>
+              <li>Implementar un modelo de clasificación robusto.</li>
+              <li>Configurar un flujo de trabajo MLOps (Versionamiento de datos con DVC, seguimiento con MLflow).</li>
+              <li>Desplegar el modelo a través de Streamlit.</li>
+            </ul>
+            </p>
+            <p><strong>Tecnologías utilizadas:</strong> Python, Scikit-learn, **MLflow**, **DVC**, Docker, GitHub Actions, Streamlit.</p>
+            <p><strong>Reflexión:</strong> "La implementación de MLOps con MLflow y DVC fue fundamental. Me permitió comprender la importancia de la **reproducibilidad** y la **trazabilidad** en el ciclo de vida del ML, especialmente en un contexto sensible como la salud."</p>
+            <div class="buttons">
+              <a href="https://github.com/joch89/Prediccion-Cancer-de-mama" target="_blank">Código Fuente</a>
+            </div>
+          </div>
+
+                    <div class="project-card">
+            <h3>🧠 [TÍTULO DEL SEGUNDO PROYECTO ML]</h3>
+            <p><strong>Descripción:</strong> *[Pendiente: Agrega la descripción del proyecto aquí.]*</p>
+            <p><strong>Objetivos:</strong> *[Pendiente: Enumera los objetivos.]*</p>
+            <p><strong>Tecnologías utilizadas:</strong> *[Pendiente: Enumera las tecnologías.]*</p>
+            <p><strong>Reflexión:</strong> *[Pendiente: Agrega una reflexión sobre lo aprendido.]*</p>
+            <div class="buttons">
+              <a href="#" target="_blank">Código Fuente</a>
+            </div>
+          </div>
+
+                    <div class="project-card">
+            <h3>🧠 [TÍTULO DEL TERCER PROYECTO ML]</h3>
+            <p><strong>Descripción:</strong> *[Pendiente: Agrega la descripción del proyecto aquí.]*</p>
+            <p><strong>Objetivos:</strong> *[Pendiente: Enumera los objetivos.]*</p>
+            <p><strong>Tecnologías utilizadas:</strong> *[Pendiente: Enumera las tecnologías.]*</p>
+            <p><strong>Reflexión:</strong> *[Pendiente: Agrega una reflexión sobre lo aprendido.]*</p>
+            <div class="buttons">
+              <a href="#" target="_blank">Código Fuente</a>
+            </div>
           </div>
         </div>
-
-                <div class="project-card ml-project">
-          <h3>🧠 [TÍTULO DEL SEGUNDO PROYECTO ML]</h3>
-          <p><strong>Descripción:</strong> *[Pendiente: Agrega la descripción del proyecto aquí.]*</p>
-          <p><strong>Objetivos:</strong> *[Pendiente: Enumera los objetivos.]*</p>
-          <p><strong>Tecnologías utilizadas:</strong> *[Pendiente: Enumera las tecnologías.]*</p>
-          <p><strong>Reflexión:</strong> *[Pendiente: Agrega una reflexión sobre lo aprendido.]*</p>
-          <div class="buttons">
-            <a href="#" target="_blank">Código Fuente (GitHub)</a>
-          </div>
-        </div>
-
-                <div class="project-card ml-project">
-          <h3>🧠 [TÍTULO DEL TERCER PROYECTO ML]</h3>
-          <p><strong>Descripción:</strong> *[Pendiente: Agrega la descripción del proyecto aquí.]*</p>
-          <p><strong>Objetivos:</strong> *[Pendiente: Enumera los objetivos.]*</p>
-          <p><strong>Tecnologías utilizadas:</strong> *[Pendiente: Enumera las tecnologías.]*</p>
-          <p><strong>Reflexión:</strong> *[Pendiente: Agrega una reflexión sobre lo aprendido.]*</p>
-          <div class="buttons">
-            <a href="#" target="_blank">Código Fuente (GitHub)</a>
-          </div>
-        </div>
-
       </div>
     </section>
 
-        <section class="projects" style="padding-top: 20px;">
+        <section class="projects-section-wrapper">
       <div class="projects-container">
         <h2>Otros Proyectos de Análisis y Visualización</h2>
 
-        <div class="project-card">
-          <h3>📊 Sankey: Gráficos sobre el recorrido del Paciente</h3>
-          <p>Visualiza el flujo del paciente con colecistectomía laparoscópica con y sin complicaciones usando datos abiertos FONASA GRD 2023.</p>
-          <div class="buttons">
-            <a href="https://joch89.github.io/Analisis-del-Flujo-del-Paciente" target="_blank">Repositorio</a>
-            <a href="https://joch89.github.io/Analisis-del-Flujo-del-Paciente/sankey_df_cole.html" target="_blank">Gráfico cole_lap</a>
-            <a href="https://joch89.github.io/Analisis-del-Flujo-del-Paciente/sankey_df_cole_wcc.html" target="_blank">Gráfico cole_lap_wcc</a>
-            <a href="https://joch89.github.io/Analisis-del-Flujo-del-Paciente/GRD_de_Cole_Lap_con_Comorbilidades_figure_4.html" target="_blank">Grafo 4 3D</a>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>📊 Sankey: Gráficos sobre el recorrido del Paciente</h3>
+            <p>Visualiza el flujo del paciente con colecistectomía laparoscópica con y sin complicaciones usando datos abiertos FONASA GRD 2023.</p>
+            <div class="buttons">
+              <a href="https://joch89.github.io/Analisis-del-Flujo-del-Paciente" target="_blank">Repositorio</a>
+              <a href="https://joch89.github.io/Analisis-del-Flujo-del-Paciente/sankey_df_cole.html" target="_blank">Gráfico cole_lap</a>
+              <a href="https://joch89.github.io/Analisis-del-Flujo-del-Paciente/sankey_df_cole_wcc.html" target="_blank">Gráfico cole_lap_wcc</a>
+              <a href="https://joch89.github.io/Analisis-del-Flujo-del-Paciente/GRD_de_Cole_Lap_con_Comorbilidades_figure_4.html" target="_blank">Grafo 4 3D</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3>📊 EDA en Grupos Relacionados a Diagnósticos</h3>
+            <p>Análisis Exploratorio de Datos (EDA) sobre un conjunto de datos de egresos hospitalarios (GRD) del año 2023.</p>
+            <div class="buttons">
+              <a href="https://github.com/joch89/EDA-en-CMBD-GRD-2023-FONASA.git" target="_blank">Repositorio</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3>📊 Top 20 Diagnósticos Principales por cantidad de egresos</h3>
+            <p>Agrupación por Diagnóstico1, Diagnóstico2, Procedimiento1 y Procedimiento2 en las bases de datos de FONASA entre los años 2019-2020.</p>
+            <div class="buttons">
+              <a href="https://github.com/joch89/Grupos-Relacionados-Diagnostico-1" target="_blank">Repositorio</a>
+              <a href="https://joch89.github.io/Grupos-Relacionados-Diagnostico-1/top_20_2019.jpg" target="_blank">Tabla 2019</a>
+              <a href="https://joch89.github.io/Grupos-Relacionados-Diagnostico-1/top_20_2020.jpg" target="_blank">Tabla 2020</a>
+              <a href="https://joch89.github.io/Grupos-Relacionados-Diagnostico-1/top_20_2021.jpg" target="_blank">Tabla 2021</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3>📊 Análisis de landmarks en una patada de costado de taekwondo</h3>
+            <p>Análisis cinemático automatizado de una patada de costado en taekwondo utilizando MediaPipe y Python. Se identifican y visualizan los puntos clave del cuerpo (landmarks) en cada fotograma del video, permitiendo evaluar la técnica, altura y alineación del movimiento.</p>
+            <div class="buttons">
+              <a href="https://github.com/joch89/Analisis-Patada-de-Costado" target="_blank">Repositorio</a>
+              <a href="https://joch89.github.io/Analisis-Patada-de-Costado/costadouno.mp4" target="_blank">Patada sin analizar</a>
+              <a href="https://joch89.github.io/Analisis-Patada-de-Costado/output_video.mp4" target="_blank">Patada con landmarks</a>
+            </div>
           </div>
         </div>
-
-        <div class="project-card">
-          <h3>📊 EDA en Grupos Relacionados a Diagnósticos</h3>
-          <p>Análisis Exploratorio de Datos (EDA) sobre un conjunto de datos de egresos hospitalarios (GRD) del año 2023.</p>
-          <div class="buttons">
-            <a href="https://github.com/joch89/EDA-en-CMBD-GRD-2023-FONASA.git" target="_blank">Repositorio</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <h3>📊 Top 20 Diagnósticos Principales por cantidad de egresos</h3>
-          <p>Agrupación por Diagnóstico1, Diagnóstico2, Procedimiento1 y Procedimiento2 en las bases de datos de FONASA entre los años 2019-2020.</p>
-          <div class="buttons">
-            <a href="https://github.com/joch89/Grupos-Relacionados-Diagnostico-1" target="_blank">Repositorio</a>
-            <a href="https://joch89.github.io/Grupos-Relacionados-Diagnostico-1/top_20_2019.jpg" target="_blank">Tabla 2019</a>
-            <a href="https://joch89.github.io/Grupos-Relacionados-Diagnostico-1/top_20_2020.jpg" target="_blank">Tabla 2020</a>
-            <a href="https://joch89.github.io/Grupos-Relacionados-Diagnostico-1/top_20_2021.jpg" target="_blank">Tabla 2021</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <h3>📊 Análisis de landmarks en una patada de costado de taekwondo</h3>
-          <p>Análisis cinemático automatizado de una patada de costado en taekwondo utilizando MediaPipe y Python. Se identifican y visualizan los puntos clave del cuerpo (landmarks) en cada fotograma del video, permitiendo evaluar la técnica, altura y alineación del movimiento.</p>
-          <div class="buttons">
-            <a href="https://github.com/joch89/Analisis-Patada-de-Costado" target="_blank">Repositorio</a>
-            <a href="https://joch89.github.io/Analisis-Patada-de-Costado/costadouno.mp4" target="_blank">Patada sin analizar</a>
-            <a href="https://joch89.github.io/Analisis-Patada-de-Costado/output_video.mp4" target="_blank">Patada con landmarks</a>
-          </div>
-        </div>
-
       </div>
     </section>
   </main>
