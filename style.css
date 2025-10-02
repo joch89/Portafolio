@@ -1,445 +1,240 @@
 /* ----------- TIPOGRAFÍAS ----------- */
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400&display=swap');
 
-
-
 body {
-
   font-family: 'Open Sans', 'Segoe UI', sans-serif;
-
   background-color: #f9fbfd;
-
   margin: 0;
-
   padding: 0;
-
   color: #333;
-
   line-height: 1.6;
-
 }
-
-
 
 /* ----------- HEADER ----------- */
-
 header {
-
   background-color: #005a9c;
-
   color: white;
-
   text-align: center;
-
   padding: 30px 20px;
-
 }
-
-
 
 h1, h2, h3 {
-
   font-family: 'Montserrat', sans-serif;
-
   margin-bottom: 10px;
-
 }
-
-
 
 h1 {
-
   font-size: 2rem;
-
 }
-
-
 
 /* ----------- BOTONES SOCIALES ----------- */
-
 .social-buttons {
-
   margin-top: 15px;
-
 }
-
-
 
 .social-buttons a {
-
   margin: 0 8px;
-
   background-color: #ffffff;
-
   color: #005a9c;
-
   border: 2px solid #ffffff;
-
   padding: 6px 12px;
-
   text-decoration: none;
-
   border-radius: 6px;
-
   font-weight: bold;
-
   font-size: 0.85rem;
-
   transition: all 0.3s ease;
-
 }
-
-
 
 .social-buttons a:hover {
-
   background-color: #ffffff;
-
   color: #003f73;
-
   border-color: #003f73;
-
 }
-
-
 
 /* ----------- MAIN ----------- */
-
 main {
-
   padding: 40px 20px;
-
   max-width: 1200px;
-
   margin: auto;
-
 }
-
-
 
 /* ----------- SECCIÓN SOBRE MÍ ----------- */
-
 .about-me {
-
-  margin: 50px 0;
-
+  /* Estilo corregido para juntar con la siguiente sección */
+  margin: 0;
+  padding-bottom: 20px; 
 }
-
-
 
 .about-container {
-
   display: flex;
-
   align-items: center;
-
   gap: 20px;
-
   flex-wrap: wrap;
-
 }
-
-
 
 .about-photo {
-
   flex-shrink: 0;
-
   width: 150px;
-
   height: 150px;
-
   border-radius: 50%;
-
   overflow: hidden;
-
   border: 3px solid #005a9c;
-
 }
-
-
 
 .about-photo img {
-
   width: 100%;
-
   height: 100%;
-
   object-fit: cover;
-
   display: block;
-
 }
-
-
 
 .about-text {
-
   flex: 1 1 250px;
-
   text-align: justify;
-
 }
-
-
 
 .about-text h2 {
-
   color: #005a9c;
-
   margin-bottom: 10px;
-
 }
-
-
 
 /* Agrandamos un poco la foto en pantallas grandes */
-
 @media (min-width: 768px) {
-
   .about-photo {
-
     width: 200px;
-
     height: 200px;
-
   }
-
 }
 
+/* ----------- CONTENEDOR DE PROYECTOS GENERAL ----------- */
+.projects-section-wrapper {
+  /* Clase para englobar el contenido de proyectos, creando una separación visual compacta */
+  margin: 20px 0;
+}
 
+.projects-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+  background-color: #f4f7fb;
+  border-radius: 12px;
+}
 
-/* ----------- PROYECTOS ----------- */
+/* ESTILO CLAVE: Asegura que el H2 dentro de este contenedor esté centrado (como en tu imagen de referencia) */
+.projects-container h2 {
+  text-align: center; 
+  color: #005a9c;
+  margin-bottom: 30px;
+}
 
-.projects {
-
+/* ----------- GRID DE PROYECTOS (Reemplaza la clase .projects) ----------- */
+.projects-grid { 
   margin-top: 50px;
-
   display: grid;
-
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
   gap: 25px;
-
 }
-
-
 
 .project-card {
-
   background-color: #ffffff;
-
   border: 1px solid #ccc;
-
   border-left: 6px solid #005a9c;
-
   border-radius: 8px;
-
   padding: 20px;
-
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-
   display: flex;
-
   flex-direction: column;
-
   justify-content: space-between;
-
   animation: fadeInUp 0.5s ease both;
-
 }
-
-
 
 .project-card h3 {
-
   margin-top: 0;
-
   color: #005a9c;
-
   font-size: 1.2rem;
-
 }
-
-
 
 .project-card p {
-
   margin: 10px 0;
-
   font-size: 0.95rem;
-
   text-align: justify;
-
 }
 
+/* Estilo para listas dentro de proyectos ML */
+.project-card ul {
+  padding-left: 20px;
+  margin: 5px 0 15px 0;
+  font-size: 0.95rem;
+}
+
+.project-card li {
+  margin-bottom: 4px;
+}
 
 
 /* ----------- BOTONES DE CADA CARD ----------- */
-
 .project-card .buttons {
-
   margin-top: 15px;
-
 }
-
-
 
 .project-card .buttons a {
-
   display: inline-block;
-
   margin: 4px 4px 0 0;
-
   padding: 6px 10px;
-
   border-radius: 5px;
-
   background: linear-gradient(135deg, #005A9C, #007FD1);
-
   color: white;
-
   text-decoration: none;
-
   font-weight: bold;
-
   font-size: 0.85rem;
-
   transition: background 0.3s ease, transform 0.2s ease;
-
 }
-
-
 
 .project-card .buttons a:hover {
-
   background: linear-gradient(135deg, #003F73, #0062A6);
-
   transform: translateY(-2px);
-
 }
-
-
 
 /* ----------- FOOTER ----------- */
-
 footer {
-
   background-color: #222;
-
   color: white;
-
   text-align: center;
-
   padding: 15px 10px;
-
   margin-top: 40px;
-
 }
-
-
 
 footer a {
-
   color: #00b0ff;
-
   text-decoration: none;
-
 }
-
-
 
 footer a:hover {
-
   text-decoration: underline;
-
 }
-
-
 
 .social-footer {
-
   margin-top: 10px;
-
   font-size: 0.9rem;
-
 }
-
-
 
 /* ----------- ANIMACIÓN ----------- */
-
 @keyframes fadeInUp {
-
   from { opacity: 0; transform: translateY(20px);}
-
   to { opacity: 1; transform: translateY(0);}
-
 }
-
-
 
 /* ----------- RESPONSIVE ----------- */
-
 @media (max-width: 600px) {
-
   header {
-
     padding: 20px 10px;
-
   }
-
-
 
   h1 {
-
     font-size: 1.6rem;
-
   }
-
-
 
   .project-card h3 {
-
     font-size: 1rem;
-
   }
-
-}
-
-
-
-.projects-container {
-
-  max-width: 1000px;
-
-  margin: auto;
-
-  padding: 40px 20px;
-
-  background-color: #f4f7fb;
-
-  border-radius: 12px;
-
-}
-
-
-
-.projects-container h2 {
-
-  text-align: center;
-
-  color: #005a9c;
-
-  margin-bottom: 30px;
-
-}
-
-
-
-.project-card p {
-
-  text-align: justify;
-
 }
