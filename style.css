@@ -32,7 +32,7 @@ header {
   padding: 3rem 1rem;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  width: 100%; /* 🔹 asegura cobertura total */
+  width: 100%;
 }
 
 header h1 {
@@ -136,12 +136,12 @@ h2::after {
 /* Botones */
 .project-card .buttons {
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap; /* 🔹 evita que se desborden */
+  flex-wrap: wrap; /* 🔹 permite que pasen a otra línea si no caben */
+  gap: 0.5rem;
 }
 
 .project-card .buttons a {
-  flex: 1;
+  flex: 1 1 auto;
   text-align: center;
   padding: 0.6rem;
   border-radius: 6px;
@@ -150,9 +150,9 @@ h2::after {
   transition: all 0.3s ease;
   background: linear-gradient(135deg, var(--color-primary), var(--color-dark));
   color: white;
-  min-width: 120px;
 }
 
+/* Hover botones */
 .project-card .buttons a:hover {
   background: linear-gradient(135deg, var(--color-primary-dark), #0062A6);
   transform: translateY(-2px);
@@ -179,7 +179,7 @@ footer {
 /* Responsive */
 @media (max-width: 600px) {
   header h1 {
-    font-size: 2.5rem; /* 🔹 más grande en móvil */
+    font-size: 2.5rem;
   }
 
   header p {
@@ -200,23 +200,23 @@ footer {
   }
 
   .about-photo img {
-    width: 220px;  /* 🔹 más grande en móvil */
+    width: 220px;
     height: 220px;
   }
 
   .about-text {
     text-align: center;
-    font-size: 1.1rem; /* 🔹 letra más grande */
+    font-size: 1.1rem;
   }
 
-  /* Fix para botones */
+  /* 🔹 Fix definitivo para botones en móvil */
   .project-card .buttons {
     flex-direction: column;
-    width: 100%;
+    gap: 0.6rem;
   }
 
   .project-card .buttons a {
-    flex: unset;
-    width: 100%;
+    flex: unset;   /* no fuerza ancho */
+    width: 100%;   /* ocupa toda la tarjeta */
   }
 }
