@@ -194,4 +194,14 @@ footer {
   .about-text {
     text-align: center;
   }
+
+  /* 🔹 Fix para los botones */
+  .project-card .buttons {
+    flex-direction: column;
+  }
+
+  .project-card .buttons a {
+    flex: unset;
+    width: 100%;
+  }
 }
