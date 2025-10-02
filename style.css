@@ -108,7 +108,7 @@ main {
 
 /* ----------- CONTENEDOR DE PROYECTOS GENERAL ----------- */
 .projects-section-wrapper {
-  /* Nueva clase para englobar el contenido de proyectos, reduciendo el margen */
+  /* Clase para englobar el contenido de proyectos, reduciendo el margen entre secciones */
   margin: 20px 0;
 }
 
@@ -120,14 +120,15 @@ main {
   border-radius: 12px;
 }
 
+/* ESTILO CLAVE: Asegura que el H2 dentro de este contenedor esté centrado */
 .projects-container h2 {
-  text-align: center;
+  text-align: center; 
   color: #005a9c;
   margin-bottom: 30px;
 }
 
 /* ----------- GRID DE PROYECTOS (APLICABLE A AMBAS SECCIONES) ----------- */
-.projects-grid { /* Renombré .projects a .projects-grid para evitar conflicto con la etiqueta <section> */
+.projects-grid { 
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
