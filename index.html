@@ -21,38 +21,40 @@
   <!-- MAIN -->
   <main>
     <!-- SOBRE MÍ -->
-    <section>
-  <h2>Sobre mí</h2>
+    <section class="about-me" aria-label="Sobre mí">
+      <h2>Sobre mí</h2>
 
-  <div style="display: flex; align-items: center; gap: 20px;">
-    <img src="https://github.com/joch89.png" alt="Foto de José Chamorro" style="width: 150px; border-radius: 8px;">
-    <div>
-      <p><strong>Nombre:</strong> José Chamorro</p>
-      <h3>Perfil profesional</h3>
-      <p>
-        Soy kinesiólogo y quiropráctico con más de 10 años de experiencia en rehabilitación musculoesquelética y deportiva. 
-        Me especializo en biomecánica y optimización del movimiento en deportistas, integrando tecnología, datos y evidencia 
-        para mejorar la toma de decisiones clínicas y de gestión.
-      </p>
-      <p>
-        Me he desempeñado como <strong>codificador GRD</strong>, lo que me permite comprender en profundidad cómo los datos estructurados 
-        pueden apoyar procesos clínicos, administrativos y estratégicos en salud. Esta experiencia se complementa con mi interés en 
-        <strong>Ciencia de Datos</strong>, <strong>Machine Learning</strong> y <strong>Computer Vision</strong>, áreas que exploro para potenciar la automatización, 
-        visualización y análisis en entornos clínicos reales.
-      </p>
-      <p>
-        Practico <strong>taekwondo</strong>, disciplina que refleja mi compromiso con la constancia, el aprendizaje continuo y el desarrollo personal.
-      </p>
-    </div>
-  </div>
+      <div class="about-container">
+        <div class="about-photo">
+          <img src="https://github.com/joch89.png" alt="Foto de José Chamorro">
+        </div>
+        <div class="about-text">
+          <p><strong>Nombre:</strong> José Chamorro</p>
+          <h3>Perfil profesional</h3>
+          <p>
+            Soy kinesiólogo y quiropráctico con más de 10 años de experiencia en rehabilitación musculoesquelética y deportiva. 
+            Me especializo en biomecánica y optimización del movimiento en deportistas, integrando tecnología, datos y evidencia 
+            para mejorar la toma de decisiones clínicas y de gestión.
+          </p>
+          <p>
+            Me he desempeñado como <strong>codificador GRD</strong>, lo que me permite comprender en profundidad cómo los datos estructurados 
+            pueden apoyar procesos clínicos, administrativos y estratégicos en salud. Esta experiencia se complementa con mi interés en 
+            <strong>Ciencia de Datos</strong>, <strong>Machine Learning</strong> y <strong>Computer Vision</strong>, áreas que exploro para potenciar la automatización, 
+            visualización y análisis en entornos clínicos reales.
+          </p>
+          <p>
+            Practico <strong>taekwondo</strong>, disciplina que refleja mi compromiso con la constancia, el aprendizaje continuo y el desarrollo personal.
+          </p>
+        </div>
+      </div>
 
-  <h3>Objetivo profesional</h3>
-  <p>
-    Mi propósito es seguir creciendo en el campo del <strong>Health Data Science</strong>, integrando análisis de datos, visualización clínica 
-    y herramientas innovadoras que aporten valor tanto en la gestión como en la práctica clínica y deportiva. Me interesa especialmente 
-    el uso estratégico de datos en salud, como en <strong>GRD</strong>, la automatización de procesos y el desarrollo de soluciones visuales que faciliten la toma de decisiones en salud.
-  </p>
-</section>
+      <h3>Objetivo profesional</h3>
+      <p>
+        Mi propósito es seguir creciendo en el campo del <strong>Health Data Science</strong>, integrando análisis de datos, visualización clínica 
+        y herramientas innovadoras que aporten valor tanto en la gestión como en la práctica clínica y deportiva. Me interesa especialmente 
+        el uso estratégico de datos en salud, como en <strong>GRD</strong>, la automatización de procesos y el desarrollo de soluciones visuales que faciliten la toma de decisiones en salud.
+      </p>
+    </section>
 
     <!-- PROYECTOS ML -->
     <section class="projects-ml" aria-label="Proyectos de Machine Learning">
@@ -71,11 +73,15 @@
           <p><strong>Tecnologías utilizadas:</strong> Python, Scikit-learn, <strong>MLflow</strong>, <strong>DVC</strong>, Docker, GitHub Actions, Streamlit.</p>
           <p><strong>Reflexión:</strong> "Este proyecto fue fundamental para comprender que la Ciencia de Datos en un entorno real no termina con el entrenamiento del modelo. La implementación de MLOps con <strong>MLflow y DVC</strong> me permitió aprender sobre la <strong>trazabilidad</strong> y la <strong>reproducibilidad</strong>, aspectos críticos en aplicaciones sensibles como la salud."</p>
           <div class="buttons">
-            <a href="https://github.com/joch89/Prediccion-Cancer-de-mama" target="_blank" rel="noopener noreferrer">Código Fuente (GitHub)</a>
+            <a href="https://github.com/joch89/Prediccion-Cancer-de-mama" target="_blank" rel="noopener noreferrer">Ver código en GitHub</a>
           </div>
         </article>
 
-        <!-- Aquí puedes añadir más proyectos ML -->
+        <!-- Proyecto placeholder -->
+        <article class="project-card ml-project">
+          <h3>🚧 Próximo Proyecto ML</h3>
+          <p>En desarrollo: más proyectos de Machine Learning serán añadidos aquí pronto.</p>
+        </article>
       </div>
     </section>
 
@@ -88,7 +94,7 @@
           <h3>📊 Sankey: Gráficos sobre el recorrido del Paciente</h3>
           <p>Visualiza el flujo del paciente con colecistectomía laparoscópica con y sin complicaciones usando datos abiertos FONASA GRD 2023.</p>
           <div class="buttons">
-            <a href="https://joch89.github.io/Analisis-del-Flujo-del-Paciente" target="_blank" rel="noopener noreferrer">Repositorio</a>
+            <a href="https://joch89.github.io/Analisis-del-Flujo-del-Paciente" target="_blank" rel="noopener noreferrer">Ver Repositorio</a>
             <a href="https://joch89.github.io/Analisis-del-Flujo-del-Paciente/sankey_df_cole.html" target="_blank" rel="noopener noreferrer">Gráfico cole_lap</a>
             <a href="https://joch89.github.io/Analisis-del-Flujo-del-Paciente/sankey_df_cole_wcc.html" target="_blank" rel="noopener noreferrer">Gráfico cole_lap_wcc</a>
             <a href="https://joch89.github.io/Analisis-del-Flujo-del-Paciente/GRD_de_Cole_Lap_con_Comorbilidades_figure_4.html" target="_blank" rel="noopener noreferrer">Grafo 4 3D</a>
@@ -99,7 +105,7 @@
           <h3>📊 EDA en Grupos Relacionados a Diagnósticos</h3>
           <p>Análisis Exploratorio de Datos (EDA) sobre un conjunto de datos de egresos hospitalarios (GRD) del año 2023.</p>
           <div class="buttons">
-            <a href="https://github.com/joch89/EDA-en-CMBD-GRD-2023-FONASA.git" target="_blank" rel="noopener noreferrer">Repositorio</a>
+            <a href="https://github.com/joch89/EDA-en-CMBD-GRD-2023-FONASA.git" target="_blank" rel="noopener noreferrer">Ver Repositorio</a>
           </div>
         </article>
 
@@ -107,7 +113,7 @@
           <h3>📊 Top 20 Diagnósticos Principales por cantidad de egresos</h3>
           <p>Agrupación por Diagnóstico1, Diagnóstico2, Procedimiento1 y Procedimiento2 en las bases de datos de FONASA entre los años 2019-2020.</p>
           <div class="buttons">
-            <a href="https://github.com/joch89/Grupos-Relacionados-Diagnostico-1" target="_blank" rel="noopener noreferrer">Repositorio</a>
+            <a href="https://github.com/joch89/Grupos-Relacionados-Diagnostico-1" target="_blank" rel="noopener noreferrer">Ver Repositorio</a>
             <a href="https://joch89.github.io/Grupos-Relacionados-Diagnostico-1/top_20_2019.jpg" target="_blank" rel="noopener noreferrer">Tabla 2019</a>
             <a href="https://joch89.github.io/Grupos-Relacionados-Diagnostico-1/top_20_2020.jpg" target="_blank" rel="noopener noreferrer">Tabla 2020</a>
             <a href="https://joch89.github.io/Grupos-Relacionados-Diagnostico-1/top_20_2021.jpg" target="_blank" rel="noopener noreferrer">Tabla 2021</a>
@@ -122,7 +128,6 @@
             <a href="https://joch89.github.io/Analisis-Patada-de-Costado/output_video.mp4" target="_blank" rel="noopener noreferrer">Patada con landmarks</a>
           </div>
         </article>
-
       </div>
     </section>
   </main>
@@ -141,8 +146,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
