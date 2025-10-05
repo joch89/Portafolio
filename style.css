@@ -17,28 +17,28 @@ header {
   background-color: #0d47a1;
   color: white;
   text-align: center;
-  padding: 30px 20px;
+  padding: 25px 20px; /* reducido */
 }
 
 header h1 {
   margin: 0;
   font-family: 'Raleway', sans-serif;
-  font-size: 2.5em;
+  font-size: 2.3em;
 }
 
 header p {
   margin: 5px 0 0;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 /* Secciones */
 section {
-  padding: 40px 20px;
+  padding: 35px 20px; /* reducido */
 }
 
 section h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 1.9em;
+  margin-bottom: 15px;
   color: #0d47a1;
   text-align: center;
 }
@@ -51,11 +51,12 @@ section h2 {
   gap: 20px;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center; /* centrado */
 }
 
 .about-photo img {
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #0d47a1;
@@ -64,6 +65,7 @@ section h2 {
 .about-text {
   flex: 1;
   min-width: 250px;
+  text-align: center; /* centrado */
 }
 
 /* Habilidades */
@@ -75,7 +77,7 @@ section h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 12px;
 }
 
 .skills-container li {
@@ -84,6 +86,7 @@ section h2 {
   padding: 8px 15px;
   border-radius: 20px;
   font-size: 0.95em;
+  text-align: center;
 }
 
 /* Experiencia y Educación */
@@ -102,9 +105,14 @@ section h2 {
   margin-bottom: 10px;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
 }
 
 /* CV */
+.cv-container {
+  text-align: center;
+}
+
 .cv-container .cv-button {
   display: inline-block;
   background-color: #0d47a1;
@@ -114,6 +122,7 @@ section h2 {
   font-size: 1em;
   text-decoration: none;
   transition: background 0.3s ease;
+  margin-top: 10px;
 }
 
 .cv-container .cv-button:hover {
@@ -177,7 +186,7 @@ section h2 {
 /* Botones */
 .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* centrado */
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -197,6 +206,10 @@ section h2 {
 }
 
 /* Contacto */
+.contact-container {
+  text-align: center;
+}
+
 .contact-container p {
   margin: 8px 0;
 }
@@ -241,6 +254,10 @@ footer {
     flex-direction: column;
     gap: 10px;
   }
+
+  .skills-container li {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -253,7 +270,7 @@ footer {
   }
 
   section h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
   .project-card {
@@ -262,11 +279,6 @@ footer {
 
   .buttons a,
   .cv-container .cv-button {
-    width: 100%;
-    text-align: center;
-  }
-
-  .skills-container li {
     width: 100%;
     text-align: center;
   }
