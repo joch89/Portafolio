@@ -81,18 +81,34 @@
     </div>
   </section>
 
-  <!-- Proyectos de Machine Learning -->
+<!-- Proyectos de Machine Learning -->
 <section id="machine-learning">
   <h2>Proyectos de Machine Learning</h2>
   <div class="projects-container">
 
     <!-- Proyecto 1 -->
     <div class="project-card">
-      <h3>Predicción de Cáncer de Mama</h3>
-      <p><strong>Descripción:</strong> Modelo de clasificación supervisada usando dataset de cáncer de mama de sklearn.</p>
-      <p><strong>Objetivos:</strong> Predecir la presencia de cáncer de mama con precisión y confiabilidad.</p>
-      <p><strong>Tecnologías:</strong> Python, Scikit-Learn, Pandas, Matplotlib</p>
-      <p><strong>Reflexión:</strong> Aprendí sobre balanceo de clases, validación cruzada y cómo interpretar métricas de clasificación.</p>
+      <h3>API de Predicción Breast Cancer</h3>
+      <p><strong>Descripción:</strong> Modelo de Machine Learning entrenado con el dataset Breast Cancer (Wisconsin) y una API REST en Flask para realizar predicciones. El proyecto está dockerizado y cuenta con un workflow CI/CD en GitHub Actions.</p>
+
+      <p><strong>Objetivos:</strong></p>
+      <ul>
+        <li>Proveer una API REST para predecir benigno o maligno a partir de 30 características de tejido mamario.</li>
+        <li>Contener el modelo y la API en Docker para ejecución sencilla en cualquier máquina.</li>
+        <li>Automatizar pruebas y despliegue mediante CI/CD en GitHub Actions.</li>
+      </ul>
+
+      <p><strong>Tecnologías:</strong> Python, Flask, Docker, Scikit-Learn, GitHub Actions</p>
+
+      <p><strong>Resultados:</strong></p>
+      <ul>
+        <li>API funcional con endpoints `GET /` y `POST /predict`.</li>
+        <li>Imagen Docker con la API lista para usar.</li>
+        <li>Workflow CI/CD que construye, prueba y publica la imagen automáticamente.</li>
+      </ul>
+
+      <p><strong>Reflexión:</strong> Aprendí a integrar un modelo de ML con una API REST, dockerizar la aplicación y automatizar el despliegue con CI/CD, asegurando reproducibilidad y escalabilidad.</p>
+
       <div class="buttons">
         <a href="https://joch89.github.io/Prediccion-Cancer-de-mama/" target="_blank">Ver Proyecto</a>
         <a href="https://github.com/joch89/Prediccion-Cancer-de-mama" target="_blank">Código</a>
@@ -146,6 +162,7 @@
 </section>
 
 
+
   <!-- Proyectos de Análisis de Datos -->
   <section id="data-analysis">
     <h2>Proyectos de Análisis de Datos</h2>
@@ -189,6 +206,7 @@
 
 </body>
 </html>
+
 
 
 
