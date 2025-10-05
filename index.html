@@ -1,153 +1,112 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portafolio de José Chamorro. Ciencia de Datos en Salud, Visualización, Análisis GRD, Biomecánica y Computer Vision.">
-  <title>Portafolio de José Chamorro</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - José Chamorro</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- HEADER -->
+
+  <!-- Header -->
   <header>
-    <h1>Portafolio de José Chamorro</h1>
-    <p>Ciencia de Datos en Salud · Visualización · Análisis GRD · Biomecánica · <strong>Machine Learning</strong></p>
-    <nav class="social-buttons" aria-label="Redes sociales">
-      <a href="https://www.linkedin.com/in/josé-chamorro" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="https://github.com/joch89" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </nav>
+    <h1>José Chamorro</h1>
+    <p>Kinesiólogo · Quiropráctico · Ciencia de Datos en Salud</p>
   </header>
 
-  <!-- MAIN -->
-  <main>
-<!-- SOBRE MÍ -->
-<section class="about-me" aria-label="Sobre mí">
-  <h2>Sobre mí</h2>
-
-  <div class="about-container">
-    <div class="about-photo">
-      <img src="https://github.com/joch89.png" alt="Foto de José Chamorro">
-    </div>
-    <div class="about-text">
-      <p><strong>Nombre:</strong> José Chamorro</p>
-
-      <h3>Perfil profesional</h3>
-      <p>
-        Soy kinesiólogo y quiropráctico con más de 10 años de experiencia en rehabilitación musculoesquelética y deportiva. 
-        Me especializo en biomecánica y optimización del movimiento en deportistas, integrando tecnología, datos y evidencia 
-        para mejorar la toma de decisiones clínicas y de gestión.
-      </p>
-      <p>
-        Me he desempeñado como <strong>codificador GRD</strong>, lo que me permite comprender en profundidad cómo los datos estructurados 
-        pueden apoyar procesos clínicos, administrativos y estratégicos en salud. Esta experiencia se complementa con mi interés en 
-        <strong>Ciencia de Datos</strong>, <strong>Machine Learning</strong> y <strong>Computer Vision</strong>, áreas que exploro para potenciar la automatización, 
-        visualización y análisis en entornos clínicos reales.
-      </p>
-      <p>
-        Practico <strong>taekwondo</strong>, disciplina que refleja mi compromiso con la constancia, el aprendizaje continuo y el desarrollo personal.
-      </p>
-
-      <h2>Objetivo profesional</h2>
-      <p>
-        Mi propósito es seguir creciendo en el campo del <strong>Health Data Science</strong>, integrando análisis de datos, visualización clínica 
-        y herramientas innovadoras que aporten valor tanto en la gestión como en la práctica clínica y deportiva. Me interesa especialmente 
-        el uso estratégico de datos en salud, como en <strong>GRD</strong>, la automatización de procesos y el desarrollo de soluciones visuales que faciliten la toma de decisiones en salud.
-      </p>
-    </div>
-  </div>
-</section>
-
-
-    <!-- PROYECTOS ML -->
-    <section class="projects-ml" aria-label="Proyectos de Machine Learning">
-      <div class="projects-container">
-        <h2>Proyectos de Machine Learning</h2>
-
-        <article class="project-card ml-project">
-          <h3>🧠 Predicción de Cáncer de Mama (Proyecto MLOps)</h3>
-          <p><strong>Descripción:</strong> Desarrollo de un pipeline completo de Machine Learning (MLOps) para la clasificación de tumores de mama (benignos/malignos) basado en el dataset de Wisconsin. Este proyecto se enfoca no solo en la precisión del modelo, sino también en la <strong>automatización</strong> y <strong>puesta en producción</strong>.</p>
-          <p><strong>Objetivos:</strong></p>
-          <ul>
-            <li>Implementar un modelo de clasificación con alta sensibilidad y especificidad.</li>
-            <li>Configurar un flujo de trabajo MLOps (versionamiento de datos, entrenamiento, registro y despliegue).</li>
-            <li>Demostrar la capacidad de llevar un modelo de la experimentación a la producción.</li>
-          </ul>
-          <p><strong>Tecnologías utilizadas:</strong> Python, Scikit-learn, <strong>MLflow</strong>, <strong>DVC</strong>, Docker, GitHub Actions, Streamlit.</p>
-          <p><strong>Reflexión:</strong> "Este proyecto fue fundamental para comprender que la Ciencia de Datos en un entorno real no termina con el entrenamiento del modelo. La implementación de MLOps con <strong>MLflow y DVC</strong> me permitió aprender sobre la <strong>trazabilidad</strong> y la <strong>reproducibilidad</strong>, aspectos críticos en aplicaciones sensibles como la salud."</p>
-          <div class="buttons">
-            <a href="https://github.com/joch89/Prediccion-Cancer-de-mama" target="_blank" rel="noopener noreferrer">Ver código en GitHub</a>
-          </div>
-        </article>
-
-        <!-- Proyecto placeholder -->
-        <article class="project-card ml-project">
-          <h3>🚧 Próximo Proyecto ML</h3>
-          <p>En desarrollo: más proyectos de Machine Learning serán añadidos aquí pronto.</p>
-        </article>
+  <!-- Sobre mí -->
+  <section id="about">
+    <h2>Sobre mí</h2>
+    <div class="about-container">
+      <div class="about-photo">
+        <img src="https://github.com/joch89.png" alt="Foto de José Chamorro">
       </div>
-    </section>
-
-    <!-- OTROS PROYECTOS -->
-    <section class="projects" aria-label="Otros proyectos de análisis y visualización">
-      <div class="projects-container">
-        <h2>Otros Proyectos de Análisis y Visualización</h2>
-
-        <article class="project-card">
-          <h3>📊 Sankey: Gráficos sobre el recorrido del Paciente</h3>
-          <p>Visualiza el flujo del paciente con colecistectomía laparoscópica con y sin complicaciones usando datos abiertos FONASA GRD 2023.</p>
-          <div class="buttons">
-            <a href="https://joch89.github.io/Analisis-del-Flujo-del-Paciente" target="_blank" rel="noopener noreferrer">Ver Repositorio</a>
-            <a href="https://joch89.github.io/Analisis-del-Flujo-del-Paciente/sankey_df_cole.html" target="_blank" rel="noopener noreferrer">Gráfico cole_lap</a>
-            <a href="https://joch89.github.io/Analisis-del-Flujo-del-Paciente/sankey_df_cole_wcc.html" target="_blank" rel="noopener noreferrer">Gráfico cole_lap_wcc</a>
-            <a href="https://joch89.github.io/Analisis-del-Flujo-del-Paciente/GRD_de_Cole_Lap_con_Comorbilidades_figure_4.html" target="_blank" rel="noopener noreferrer">Grafo 4 3D</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h3>📊 EDA en Grupos Relacionados a Diagnósticos</h3>
-          <p>Análisis Exploratorio de Datos (EDA) sobre un conjunto de datos de egresos hospitalarios (GRD) del año 2023.</p>
-          <div class="buttons">
-            <a href="https://github.com/joch89/EDA-en-CMBD-GRD-2023-FONASA.git" target="_blank" rel="noopener noreferrer">Ver Repositorio</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h3>📊 Top 20 Diagnósticos Principales por cantidad de egresos</h3>
-          <p>Agrupación por Diagnóstico1, Diagnóstico2, Procedimiento1 y Procedimiento2 en las bases de datos de FONASA entre los años 2019-2020.</p>
-          <div class="buttons">
-            <a href="https://github.com/joch89/Grupos-Relacionados-Diagnostico-1" target="_blank" rel="noopener noreferrer">Ver Repositorio</a>
-            <a href="https://joch89.github.io/Grupos-Relacionados-Diagnostico-1/top_20_2019.jpg" target="_blank" rel="noopener noreferrer">Tabla 2019</a>
-            <a href="https://joch89.github.io/Grupos-Relacionados-Diagnostico-1/top_20_2020.jpg" target="_blank" rel="noopener noreferrer">Tabla 2020</a>
-            <a href="https://joch89.github.io/Grupos-Relacionados-Diagnostico-1/top_20_2021.jpg" target="_blank" rel="noopener noreferrer">Tabla 2021</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h3>📊 Análisis de landmarks en una patada de costado de taekwondo</h3>
-          <p>Análisis cinemático automatizado de una patada de costado en taekwondo utilizando MediaPipe y Python. Se identifican y visualizan los puntos clave del cuerpo (landmarks) en cada fotograma del video, permitiendo evaluar la técnica, altura y alineación del movimiento.</p>
-          <div class="buttons">
-            <a href="https://joch89.github.io/Analisis-Patada-de-Costado/costadouno.mp4" target="_blank" rel="noopener noreferrer">Patada sin analizar</a>
-            <a href="https://joch89.github.io/Analisis-Patada-de-Costado/output_video.mp4" target="_blank" rel="noopener noreferrer">Patada con landmarks</a>
-          </div>
-        </article>
+      <div class="about-text">
+        <p>Hola 👋 Soy <strong>José Chamorro</strong>, kinesiólogo y quiropráctico con más de 10 años de experiencia en rehabilitación musculoesquelética y deportiva.</p>
+        <p>Actualmente me dedico al análisis de datos y Machine Learning aplicados a la salud y biomecánica, combinando ciencia, movimiento y tecnología para crear soluciones basadas en evidencia.</p>
+        <p>Explora mis proyectos y conoce cómo aplico la analítica y la inteligencia artificial en contextos clínicos y deportivos.</p>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <!-- FOOTER -->
+  <!-- Proyectos de Machine Learning -->
+  <section id="machine-learning">
+    <h2>Proyectos de Machine Learning</h2>
+    <div class="projects-container">
+      
+      <div class="project-card">
+        <h3>Predicción de Cáncer de Mama</h3>
+        <p>Modelo de clasificación supervisada usando el dataset de cáncer de mama de sklearn. Incluye análisis exploratorio, balanceo de clases y evaluación del modelo.</p>
+        <div class="buttons">
+          <a href="#">Ver Proyecto</a>
+          <a href="#">Código</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Análisis de Patada de Taekwondo</h3>
+        <p>Proyecto de visión por computadora con MediaPipe y OpenCV para detectar y analizar el movimiento durante una patada lateral. Integración con técnicas de Machine Learning.</p>
+        <div class="buttons">
+          <a href="#">Ver Proyecto</a>
+          <a href="#">Código</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Proyecto en Construcción</h3>
+        <p>Nuevo proyecto de Machine Learning en desarrollo. Muy pronto disponible.</p>
+        <div class="buttons">
+          <a href="#">Próximamente</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos de Análisis de Datos -->
+  <section id="data-analysis">
+    <h2>Proyectos de Análisis de Datos</h2>
+    <div class="projects-container">
+      
+      <div class="project-card">
+        <h3>Grupos Relacionados a Diagnóstico (GRD)</h3>
+        <p>Análisis exploratorio de los GRD hospitalarios para entender la distribución de casos, complejidad y costos asociados. Procesamiento de datos en Excel y Python.</p>
+        <div class="buttons">
+          <a href="#">Ver Proyecto</a>
+          <a href="#">Código</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Predicción de Mortalidad Hospitalaria</h3>
+        <p>Desarrollo de modelo predictivo utilizando variables clínicas y demográficas. Incluye preprocesamiento, selección de variables y métricas de desempeño.</p>
+        <div class="buttons">
+          <a href="#">Ver Proyecto</a>
+          <a href="#">Código</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Análisis Postural y Movimiento</h3>
+        <p>Uso de MediaPipe para estimar la postura y calcular ángulos articulares en imágenes, orientado al análisis biomecánico y evaluación funcional.</p>
+        <div class="buttons">
+          <a href="#">Ver Proyecto</a>
+          <a href="#">Código</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 José Chamorro · 
-      <a href="mailto:jm.chamorro.g@gmail.com">jm.chamorro.g@gmail.com</a>
-    </p>
-    <div class="social-footer">
-      <a href="https://www.linkedin.com/in/josé-chamorro" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
-      <a href="https://github.com/joch89" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </div>
+    <p>© 2025 José Chamorro — Ciencia de Datos en Salud</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
