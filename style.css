@@ -33,7 +33,7 @@ header p {
 
 /* Sobre mí */
 #about {
-  padding: 60px 20px;
+  padding: 40px 20px; /* menos espacio que antes */
 }
 
 .about-container {
@@ -60,12 +60,16 @@ header p {
 
 /* Secciones de proyectos */
 section {
-  padding: 30px 20px;
+  padding: 30px 20px; /* menos espacio arriba y abajo */
+}
+
+section + section {
+  padding-top: 20px; /* reduce el espacio entre secciones consecutivas */
 }
 
 section h2 {
   font-size: 2em;
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* menos margen */
   color: #0d47a1;
   text-align: center;
 }
@@ -85,7 +89,7 @@ section h2 {
   overflow-x: auto;
   gap: 20px;
   scroll-behavior: smooth;
-  padding-bottom: 20px;
+  padding-bottom: 15px; /* un poco menos */
   max-width: 100%;
 }
 
@@ -103,7 +107,7 @@ section h2 {
   flex: 0 0 320px;
   background: #fff;
   border-radius: 16px;
-  padding: 20px;
+  padding: 18px; /* ligeramente menos */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: left;
   transition: transform 0.3s ease;
@@ -117,14 +121,14 @@ section h2 {
 .project-card h3 {
   color: #0d47a1;
   font-size: 1.2em;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .project-card p {
   color: #444;
   font-size: 0.95em;
   line-height: 1.4em;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 /* Botones */
@@ -132,14 +136,14 @@ section h2 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px; /* un poco menos */
 }
 
 .buttons a {
   text-decoration: none;
   background-color: #0d47a1;
   color: white;
-  padding: 8px 16px;
+  padding: 7px 14px;
   border-radius: 8px;
   font-size: 0.9em;
   transition: background 0.3s ease;
@@ -181,7 +185,15 @@ footer {
 
   .buttons {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
+  }
+
+  section {
+    padding: 25px 15px;
+  }
+
+  section + section {
+    padding-top: 15px;
   }
 }
 
@@ -199,7 +211,7 @@ footer {
   }
 
   .project-card {
-    padding: 15px;
+    padding: 12px;
   }
 
   .buttons a {
@@ -207,4 +219,3 @@ footer {
     text-align: center;
   }
 }
-
