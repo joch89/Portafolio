@@ -1,10 +1,19 @@
+/* Colores */
+:root {
+  --primary: #30391F;        /* Color principal */
+  --complement1: #668A4C;    /* Primer complementario */
+  --complement2: #ACCC7B;    /* Segundo complementario */
+  --dark: #464646;           /* Color oscuro */
+  --light: #FFFFFF;          /* Color claro */
+}
+
 /* General */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f6f8;
-  color: #333;
+  background-color: var(--light);
+  color: var(--dark);
   box-sizing: border-box;
 }
 
@@ -14,10 +23,10 @@ body {
 
 /* Header */
 header {
-  background-color: #0d47a1;
-  color: white;
+  background-color: var(--primary);
+  color: var(--light);
   text-align: center;
-  padding: 25px 20px; /* reducido */
+  padding: 20px;
 }
 
 header h1 {
@@ -31,15 +40,69 @@ header p {
   font-size: 1.1em;
 }
 
+/* Navbar desplegable */
+.navbar {
+  margin-top: 15px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: var(--complement1);
+  color: var(--light);
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--primary);
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: var(--light);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--complement2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn:hover {
+  background-color: var(--complement2);
+}
+
 /* Secciones */
 section {
-  padding: 35px 20px; /* reducido */
+  padding: 25px 20px;
+}
+
+.compact-section {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 section h2 {
   font-size: 1.9em;
   margin-bottom: 15px;
-  color: #0d47a1;
+  color: var(--primary);
   text-align: center;
 }
 
@@ -51,7 +114,7 @@ section h2 {
   gap: 20px;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center; /* centrado */
+  justify-content: center;
 }
 
 .about-photo img {
@@ -59,13 +122,13 @@ section h2 {
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #0d47a1;
+  border: 4px solid var(--primary);
 }
 
 .about-text {
   flex: 1;
   min-width: 250px;
-  text-align: center; /* centrado */
+  text-align: center;
 }
 
 /* Habilidades */
@@ -81,8 +144,8 @@ section h2 {
 }
 
 .skills-container li {
-  background-color: #0d47a1;
-  color: white;
+  background-color: var(--complement1);
+  color: var(--light);
   padding: 8px 15px;
   border-radius: 20px;
   font-size: 0.95em;
@@ -100,7 +163,7 @@ section h2 {
 
 .experience-container li,
 .education-container li {
-  background-color: #fff;
+  background-color: var(--light);
   padding: 12px 15px;
   margin-bottom: 10px;
   border-radius: 12px;
@@ -115,21 +178,20 @@ section h2 {
 
 .cv-container .cv-button {
   display: inline-block;
-  background-color: #0d47a1;
-  color: white;
+  background-color: var(--complement1);
+  color: var(--light);
   padding: 12px 25px;
   border-radius: 8px;
   font-size: 1em;
   text-decoration: none;
   transition: background 0.3s ease;
-  margin-top: 10px;
 }
 
 .cv-container .cv-button:hover {
-  background-color: #1565c0;
+  background-color: var(--complement2);
 }
 
-/* Proyectos de ML y Análisis de Datos */
+/* Proyectos */
 .projects-container,
 .projects-carousel {
   display: flex;
@@ -155,10 +217,9 @@ section h2 {
   border-radius: 4px;
 }
 
-/* Tarjetas de proyecto */
 .project-card {
   flex: 0 0 320px;
-  background: #fff;
+  background: var(--light);
   border-radius: 16px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -171,13 +232,13 @@ section h2 {
 }
 
 .project-card h3 {
-  color: #0d47a1;
+  color: var(--primary);
   font-size: 1.2em;
   margin-bottom: 10px;
 }
 
 .project-card p {
-  color: #444;
+  color: var(--dark);
   font-size: 0.95em;
   line-height: 1.4em;
   margin-bottom: 10px;
@@ -186,15 +247,15 @@ section h2 {
 /* Botones */
 .buttons {
   display: flex;
-  justify-content: center; /* centrado */
+  justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
 }
 
 .buttons a {
   text-decoration: none;
-  background-color: #0d47a1;
-  color: white;
+  background-color: var(--complement1);
+  color: var(--light);
   padding: 8px 16px;
   border-radius: 8px;
   font-size: 0.9em;
@@ -202,7 +263,7 @@ section h2 {
 }
 
 .buttons a:hover {
-  background-color: #1565c0;
+  background-color: var(--complement2);
 }
 
 /* Contacto */
@@ -218,43 +279,37 @@ section h2 {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #0d47a1;
-  color: white;
+  background-color: var(--primary);
+  color: var(--light);
 }
 
-/* Media Queries para móviles */
+/* Media Queries */
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-
   .about-text {
     min-width: unset;
   }
-
   .projects-container,
   .projects-carousel {
     flex-direction: column;
     align-items: center;
   }
-
   .project-card {
     width: 100%;
     max-width: 400px;
   }
-
   .buttons {
     flex-direction: column;
     gap: 10px;
   }
-
   .skills-container ul {
     flex-direction: column;
     gap: 10px;
   }
-
   .skills-container li {
     width: 100%;
   }
@@ -264,19 +319,15 @@ footer {
   header h1 {
     font-size: 2em;
   }
-
   header p {
     font-size: 1em;
   }
-
   section h2 {
     font-size: 1.4em;
   }
-
   .project-card {
     padding: 15px;
   }
-
   .buttons a,
   .cv-container .cv-button {
     width: 100%;
@@ -286,11 +337,9 @@ footer {
 
 /* Justificar y centrar verticalmente */
 .about-text.text-justify {
-  text-align: justify;        /* Justifica el texto */
-  display: flex;              /* Flex para alinear verticalmente */
-  flex-direction: column;     /* Mantener párrafos en columna */
-  justify-content: center;    /* Centrado vertical dentro del contenedor */
-  gap: 10px;                  /* Espaciado entre párrafos */
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
 }
-
-
