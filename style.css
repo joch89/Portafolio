@@ -6,6 +6,7 @@ body {
   background-color: #f4f6f8;
   color: #333;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -17,7 +18,7 @@ header {
   background-color: #0d47a1;
   color: white;
   text-align: center;
-  padding: 25px 20px; /* reducido */
+  padding: 25px 20px;
 }
 
 header h1 {
@@ -33,9 +34,20 @@ header p {
 
 /* Secciones */
 section {
-  padding: 35px 20px; /* reducido */
+  padding: 30px 20px;
 }
 
+/* Fondos por sección */
+#about { background-color: #e3f2fd; }        /* Azul claro */
+#skills { background-color: #bbdefb; }       /* Azul más intenso */
+#experience { background-color: #ffffff; }   /* Blanco para contraste */
+#education { background-color: #e3f2fd; }    
+#cv { background-color: #bbdefb; }
+#machine-learning { background-color: #ffffff; }
+#data-analysis { background-color: #e3f2fd; }
+#contact { background-color: #bbdefb; }
+
+/* Titulos de sección */
 section h2 {
   font-size: 1.9em;
   margin-bottom: 15px;
@@ -48,10 +60,10 @@ section h2 {
   display: flex;
   max-width: 1000px;
   margin: 0 auto;
-  gap: 20px;
+  gap: 15px;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center; /* centrado */
+  justify-content: center;
 }
 
 .about-photo img {
@@ -65,7 +77,8 @@ section h2 {
 .about-text {
   flex: 1;
   min-width: 250px;
-  text-align: center; /* centrado */
+  text-align: center;
+  line-height: 1.5em;
 }
 
 /* Habilidades */
@@ -77,7 +90,7 @@ section h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .skills-container li {
@@ -101,8 +114,8 @@ section h2 {
 .experience-container li,
 .education-container li {
   background-color: #fff;
-  padding: 12px 15px;
-  margin-bottom: 10px;
+  padding: 10px 15px;
+  margin-bottom: 8px;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   text-align: left;
@@ -111,27 +124,26 @@ section h2 {
 /* CV */
 .cv-container {
   text-align: center;
+  margin-top: 15px;
 }
 
 .cv-container .cv-button {
   display: inline-block;
   background-color: #0d47a1;
   color: white;
-  padding: 12px 25px;
+  padding: 10px 20px;
   border-radius: 8px;
   font-size: 1em;
   text-decoration: none;
   transition: background 0.3s ease;
-  margin-top: 10px;
 }
 
 .cv-container .cv-button:hover {
   background-color: #1565c0;
 }
 
-/* Proyectos de ML y Análisis de Datos */
-.projects-container,
-.projects-carousel {
+/* Proyectos de ML */
+.projects-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -140,10 +152,14 @@ section h2 {
   margin: 0 auto;
 }
 
+/* Carrusel Proyectos de Análisis */
 .projects-carousel {
+  display: flex;
   overflow-x: auto;
-  scroll-behavior: smooth;
-  padding-bottom: 20px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 20px;
+  padding-bottom: 15px;
 }
 
 .projects-carousel::-webkit-scrollbar {
@@ -157,17 +173,19 @@ section h2 {
 
 /* Tarjetas de proyecto */
 .project-card {
-  flex: 0 0 320px;
+  flex: 0 0 300px;
   background: #fff;
   border-radius: 16px;
-  padding: 20px;
+  padding: 15px 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: left;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  scroll-snap-align: start;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .project-card h3 {
@@ -186,16 +204,16 @@ section h2 {
 /* Botones */
 .buttons {
   display: flex;
-  justify-content: center; /* centrado */
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 }
 
 .buttons a {
   text-decoration: none;
   background-color: #0d47a1;
   color: white;
-  padding: 8px 16px;
+  padding: 8px 14px;
   border-radius: 8px;
   font-size: 0.9em;
   transition: background 0.3s ease;
@@ -211,27 +229,22 @@ section h2 {
 }
 
 .contact-container p {
-  margin: 8px 0;
+  margin: 6px 0;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   background-color: #0d47a1;
   color: white;
 }
 
-/* Media Queries para móviles */
+/* Media Queries */
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
-    align-items: center;
     text-align: center;
-  }
-
-  .about-text {
-    min-width: unset;
   }
 
   .projects-container,
@@ -247,12 +260,12 @@ footer {
 
   .buttons {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
   }
 
   .skills-container ul {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
   }
 
   .skills-container li {
@@ -261,25 +274,10 @@ footer {
 }
 
 @media (max-width: 480px) {
-  header h1 {
-    font-size: 2em;
-  }
-
-  header p {
-    font-size: 1em;
-  }
-
-  section h2 {
-    font-size: 1.4em;
-  }
-
-  .project-card {
-    padding: 15px;
-  }
-
+  header h1 { font-size: 2em; }
+  header p { font-size: 1em; }
+  section h2 { font-size: 1.4em; }
+  .project-card { padding: 12px; }
   .buttons a,
-  .cv-container .cv-button {
-    width: 100%;
-    text-align: center;
-  }
+  .cv-container .cv-button { width: 100%; text-align: center; }
 }
