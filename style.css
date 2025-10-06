@@ -283,3 +283,14 @@ footer {
     text-align: center;
   }
 }
+
+/* Justificar y centrar verticalmente */
+.about-text.text-justify {
+  text-align: justify;        /* Justifica el texto */
+  display: flex;              /* Flex para alinear verticalmente */
+  flex-direction: column;     /* Mantener párrafos en columna */
+  justify-content: center;    /* Centrado vertical dentro del contenedor */
+  gap: 10px;                  /* Espaciado entre párrafos */
+}
+
+
