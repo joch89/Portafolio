@@ -6,6 +6,8 @@
   <title>Portafolio - José Chamorro</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="description" content="Portafolio de José Chamorro - Kinesiólogo, Quiropráctico y Científico de Datos en Salud. Proyectos de Machine Learning y análisis clínico.">
 </head>
 <body>
 
@@ -35,12 +37,12 @@
     <h2>Habilidades & Stack Técnico</h2>
     <div class="skills-container">
       <ul>
-        <li>Python (Pandas, NumPy, Scikit-Learn, Matplotlib)</li>
-        <li>OpenCV, MediaPipe</li>
-        <li>TensorFlow, PyTorch</li>
-        <li>Análisis estadístico y modelado predictivo</li>
-        <li>Análisis de datos clínicos con sistemas GRD</li>
-        <li>Visualización de datos y dashboards</li>
+        <li><i class="fab fa-python"></i> Python (Pandas, NumPy, Scikit-Learn, Matplotlib)</li>
+        <li><i class="fas fa-camera"></i> OpenCV, MediaPipe</li>
+        <li><i class="fas fa-brain"></i> TensorFlow, PyTorch</li>
+        <li><i class="fas fa-chart-line"></i> Análisis estadístico y modelado predictivo</li>
+        <li><i class="fas fa-hospital"></i> Análisis de datos clínicos con sistemas GRD</li>
+        <li><i class="fas fa-chart-pie"></i> Visualización de datos y dashboards</li>
       </ul>
     </div>
   </section>
@@ -57,7 +59,7 @@
       </ul>
     </div>
   </section>
-  
+
   <!-- Educación y Certificaciones -->
   <section id="education">
     <h2>Educación & Cursos Principales</h2>
@@ -76,123 +78,88 @@
   <!-- CV Descargable -->
   <section id="cv">
     <h2>Currículum Vitae</h2>
-    <div class="cv-container" style="text-align:center;">
-      <a href="Currículum Jose Chamorro.pdf" target="_blank" class="cv-button">Descargar CV</a>
+    <div class="cv-container">
+      <a href="Currículum Jose Chamorro.pdf" target="_blank" class="cv-button">
+        <i class="fas fa-download"></i> Descargar CV
+      </a>
     </div>
   </section>
 
-<!-- Proyectos de Machine Learning -->
-<section id="machine-learning">
-  <h2>Proyectos de Machine Learning</h2>
-  <div class="projects-container">
+  <!-- Proyectos de Machine Learning -->
+  <section id="machine-learning">
+    <h2>Proyectos de Machine Learning</h2>
+    <div class="projects-container">
+      <!-- Proyecto 1 -->
+      <div class="project-card">
+        <h3>API de Predicción Breast Cancer</h3>
+        <p><strong>Descripción:</strong> Modelo de Machine Learning entrenado con el dataset Breast Cancer (Wisconsin) y una API REST en Flask para realizar predicciones. El proyecto está dockerizado y cuenta con un workflow CI/CD en GitHub Actions.</p>
+        <ul>
+          <li>Proveer API REST para predecir benigno o maligno</li>
+          <li>Dockerización del proyecto</li>
+          <li>Automatización de pruebas y despliegue</li>
+        </ul>
+        <p><strong>Tecnologías:</strong> Python, Flask, Docker, Scikit-Learn, GitHub Actions</p>
+        <div class="buttons">
+          <a href="https://joch89.github.io/Prediccion-Cancer-de-mama/" target="_blank">Ver Proyecto</a>
+          <a href="https://github.com/joch89/Prediccion-Cancer-de-mama" target="_blank">Código</a>
+        </div>
+      </div>
 
-    <!-- Proyecto 1 -->
-    <div class="project-card">
-      <h3>API de Predicción Breast Cancer</h3>
-      <p><strong>Descripción:</strong> Modelo de Machine Learning entrenado con el dataset Breast Cancer (Wisconsin) y una API REST en Flask para realizar predicciones. El proyecto está dockerizado y cuenta con un workflow CI/CD en GitHub Actions.</p>
+      <!-- Proyecto 2 -->
+      <div class="project-card">
+        <h3>Análisis de Patada de Costado</h3>
+        <p><strong>Descripción:</strong> Proyecto de visión por computadora con MediaPipe y OpenCV para detectar y analizar el movimiento de una patada de costado en Taekwondo.</p>
+        <ul>
+          <li>Evaluación de postura y ángulos articulares</li>
+          <li>Detección automática de inicio y fin de patadas</li>
+          <li>Métricas de velocidad, aceleración y jerk angular</li>
+          <li>Feedback visual en video y CSV con métricas</li>
+        </ul>
+        <p><strong>Tecnologías:</strong> Python, MediaPipe, OpenCV, Numpy, Pandas, Matplotlib, SciPy</p>
+        <div class="buttons">
+          <a href="https://joch89.github.io/analisis-patada-mediapipe/" target="_blank">Ver Proyecto</a>
+          <a href="https://github.com/joch89/analisis-patada-mediapipe" target="_blank">Código</a>
+        </div>
+      </div>
 
-      <p><strong>Objetivos:</strong></p>
-      <ul>
-        <li>Proveer una API REST para predecir benigno o maligno a partir de 30 características de tejido mamario.</li>
-        <li>Contener el modelo y la API en Docker para ejecución sencilla en cualquier máquina.</li>
-        <li>Automatizar pruebas y despliegue mediante CI/CD en GitHub Actions.</li>
-      </ul>
-
-      <p><strong>Tecnologías:</strong> Python, Flask, Docker, Scikit-Learn, GitHub Actions</p>
-
-      <p><strong>Resultados:</strong></p>
-      <ul>
-        <li>API funcional con endpoints `GET /` y `POST /predict`.</li>
-        <li>Imagen Docker con la API lista para usar.</li>
-        <li>Workflow CI/CD que construye, prueba y publica la imagen automáticamente.</li>
-      </ul>
-
-      <p><strong>Reflexión:</strong> Aprendí a integrar un modelo de ML con una API REST, dockerizar la aplicación y automatizar el despliegue con CI/CD, asegurando reproducibilidad y escalabilidad.</p>
-
-      <div class="buttons">
-        <a href="https://joch89.github.io/Prediccion-Cancer-de-mama/" target="_blank">Ver Proyecto</a>
-        <a href="https://github.com/joch89/Prediccion-Cancer-de-mama" target="_blank">Código</a>
+      <!-- Proyecto 3 -->
+      <div class="project-card">
+        <h3>Proyecto en Construcción</h3>
+        <p>Nuevo proyecto de Machine Learning en desarrollo.</p>
+        <div class="buttons">
+          <a href="#">Próximamente</a>
+        </div>
       </div>
     </div>
-
-    <!-- Proyecto 2 -->
-    <div class="project-card">
-      <h3>Análisis de Patada de Costado</h3>
-      <p><strong>Descripción:</strong> Proyecto de visión por computadora con <strong>MediaPipe</strong> y <strong>OpenCV</strong> para detectar, registrar y analizar el movimiento de una patada de costado (yoko geri) en Taekwondo.</p>
-      
-      <p><strong>Objetivos:</strong></p>
-      <ul>
-        <li>Evaluar la postura y ángulos articulares (cadera, rodilla).</li>
-        <li>Detectar automáticamente inicio y fin de patadas.</li>
-        <li>Generar métricas de velocidad, aceleración y jerk angular.</li>
-        <li>Proporcionar feedback visual inmediato mediante video con métricas superpuestas.</li>
-        <li>Crear un archivo CSV con todos los landmarks y métricas para análisis numérico flexible y extensible.</li>
-      </ul>
-
-      <p><strong>Tecnologías:</strong> Python, MediaPipe (CNN), OpenCV, Numpy, Pandas, Matplotlib, SciPy</p>
-
-      <p><strong>Resultados:</strong></p>
-      <ul>
-        <li>Video procesado con landmarks y contador de patadas.</li>
-        <li>Gráficos de ángulo, velocidad, aceleración y jerk.</li>
-        <li>CSV con métricas de cada patada para análisis comparativo.</li>
-      </ul>
-
-      <p><strong>Reflexión:</strong> Aprendí sobre detección de landmarks, análisis cinemático y procesamiento de video en tiempo real, integrando datos cuantitativos y visuales para mejorar la técnica deportiva.</p>
-
-      <div class="buttons">
-        <a href="https://joch89.github.io/analisis-patada-mediapipe/" target="_blank">Ver Proyecto</a>
-        <a href="https://github.com/joch89/analisis-patada-mediapipe" target="_blank">Código</a>
-      </div>
-    </div>
-
-    <!-- Proyecto 3 -->
-    <div class="project-card">
-      <h3>Proyecto en Construcción</h3>
-      <p><strong>Descripción:</strong> Nuevo proyecto de Machine Learning en desarrollo.</p>
-      <p><strong>Objetivos:</strong> Muy pronto disponible.</p>
-      <p><strong>Tecnologías:</strong> Por definir</p>
-      <p><strong>Reflexión:</strong> Por definir</p>
-      <div class="buttons">
-        <a href="#">Próximamente</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
+  </section>
 
   <!-- Proyectos de Análisis de Datos -->
   <section id="data-analysis">
     <h2>Proyectos de Análisis de Datos</h2>
     <div class="projects-carousel">
-
       <div class="project-card">
         <h3>Análisis del Flujo del Paciente</h3>
-        <p>Exploración de datos hospitalarios para optimizar rutas de atención y tiempos de espera.</p>
+        <p>Optimización de rutas de atención y tiempos de espera en hospitales.</p>
         <div class="buttons">
           <a href="https://joch89.github.io/Analisis-del-Flujo-del-Paciente/" target="_blank">Ver Proyecto</a>
           <a href="https://github.com/joch89/Analisis-del-Flujo-del-Paciente" target="_blank">Código</a>
         </div>
       </div>
-
       <div class="project-card">
         <h3>EDA en CMBD GRD 2023 FONASA</h3>
-        <p>Análisis exploratorio de los GRD hospitalarios para entender distribución de casos y costos asociados.</p>
+        <p>Análisis exploratorio de GRD hospitalarios para entender distribución de casos y costos.</p>
         <div class="buttons">
           <a href="https://joch89.github.io/EDA-en-CMBD-GRD-2023-FONASA/" target="_blank">Ver Proyecto</a>
           <a href="https://github.com/joch89/EDA-en-CMBD-GRD-2023-FONASA" target="_blank">Código</a>
         </div>
       </div>
-
     </div>
   </section>
 
   <!-- Contacto -->
   <section id="contact">
     <h2>Contacto</h2>
-    <div class="contact-container" style="text-align:center; margin-bottom:30px;">
+    <div class="contact-container">
       <p>Email: <a href="mailto:jm.chamorro.g@gmail.com">jm.chamorro.g@gmail.com</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/josé-chamorro/" target="_blank">José Chamorro</a></p>
       <p>Instagram: <a href="https://www.instagram.com/[tuusuario]" target="_blank">[Tu usuario]</a></p>
@@ -206,8 +173,3 @@
 
 </body>
 </html>
-
-
-
-
-
