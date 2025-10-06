@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio - José Chamorro</title>
-  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <meta name="description" content="Portafolio de José Chamorro - Kinesiólogo, Quiropráctico y Científico de Datos en Salud. Proyectos de Machine Learning y análisis clínico.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -27,12 +26,11 @@
       <div class="about-text">
         <p>Hola 👋 Soy <strong>José Chamorro</strong>, kinesiólogo y Quiropráctico con más de 10 años de experiencia en Rehabilitación Musculoesquelética y Deportiva.</p>
         <p>Actualmente me encuentro en un proceso de transición hacia el <strong>Health Data Science</strong>, explorando el uso de <strong>Análisis de Datos</strong>, <strong>Machine Learning</strong> y <strong>Computer Vision</strong> aplicados a la salud y el rendimiento humano.</p>
-        <p>Explora mis proyectos y conoce cómo aplico la analítica y la inteligencia artificial en contextos clínicos y deportivos.</p>
       </div>
     </div>
   </section>
 
-  <!-- Habilidades / Stack Técnico -->
+  <!-- Habilidades -->
   <section id="skills">
     <h2>Habilidades & Stack Técnico</h2>
     <div class="skills-container">
@@ -47,7 +45,7 @@
     </div>
   </section>
 
-  <!-- Experiencia Laboral -->
+  <!-- Experiencia -->
   <section id="experience">
     <h2>Experiencia Laboral</h2>
     <div class="experience-container">
@@ -60,7 +58,7 @@
     </div>
   </section>
 
-  <!-- Educación y Certificaciones -->
+  <!-- Educación -->
   <section id="education">
     <h2>Educación & Cursos Principales</h2>
     <div class="education-container">
@@ -75,60 +73,38 @@
     </div>
   </section>
 
-  <!-- CV Descargable -->
+  <!-- CV -->
   <section id="cv">
     <h2>Currículum Vitae</h2>
     <div class="cv-container">
-      <a href="Currículum Jose Chamorro.pdf" target="_blank" class="cv-button">
-        <i class="fas fa-download"></i> Descargar CV
-      </a>
+      <a href="Currículum Jose Chamorro.pdf" target="_blank" class="cv-button"><i class="fas fa-download"></i> Descargar CV</a>
     </div>
   </section>
 
-  <!-- Proyectos de Machine Learning -->
+  <!-- Proyectos ML -->
   <section id="machine-learning">
     <h2>Proyectos de Machine Learning</h2>
     <div class="projects-container">
-      <!-- Proyecto 1 -->
       <div class="project-card">
         <h3>API de Predicción Breast Cancer</h3>
-        <p><strong>Descripción:</strong> Modelo de Machine Learning entrenado con el dataset Breast Cancer (Wisconsin) y una API REST en Flask para realizar predicciones. El proyecto está dockerizado y cuenta con un workflow CI/CD en GitHub Actions.</p>
-        <ul>
-          <li>Proveer API REST para predecir benigno o maligno</li>
-          <li>Dockerización del proyecto</li>
-          <li>Automatización de pruebas y despliegue</li>
-        </ul>
-        <p><strong>Tecnologías:</strong> Python, Flask, Docker, Scikit-Learn, GitHub Actions</p>
+        <p>Modelo ML con API REST y Docker.</p>
         <div class="buttons">
           <a href="https://joch89.github.io/Prediccion-Cancer-de-mama/" target="_blank">Ver Proyecto</a>
           <a href="https://github.com/joch89/Prediccion-Cancer-de-mama" target="_blank">Código</a>
         </div>
       </div>
-
-      <!-- Proyecto 2 -->
       <div class="project-card">
         <h3>Análisis de Patada de Costado</h3>
-        <p><strong>Descripción:</strong> Proyecto de visión por computadora con MediaPipe y OpenCV para detectar y analizar el movimiento de una patada de costado en Taekwondo.</p>
-        <ul>
-          <li>Evaluación de postura y ángulos articulares</li>
-          <li>Detección automática de inicio y fin de patadas</li>
-          <li>Métricas de velocidad, aceleración y jerk angular</li>
-          <li>Feedback visual en video y CSV con métricas</li>
-        </ul>
-        <p><strong>Tecnologías:</strong> Python, MediaPipe, OpenCV, Numpy, Pandas, Matplotlib, SciPy</p>
+        <p>MediaPipe + OpenCV para análisis de movimiento en Taekwondo.</p>
         <div class="buttons">
           <a href="https://joch89.github.io/analisis-patada-mediapipe/" target="_blank">Ver Proyecto</a>
           <a href="https://github.com/joch89/analisis-patada-mediapipe" target="_blank">Código</a>
         </div>
       </div>
-
-      <!-- Proyecto 3 -->
       <div class="project-card">
         <h3>Proyecto en Construcción</h3>
-        <p>Nuevo proyecto de Machine Learning en desarrollo.</p>
-        <div class="buttons">
-          <a href="#">Próximamente</a>
-        </div>
+        <p>Próximamente.</p>
+        <div class="buttons"><a href="#">Próximamente</a></div>
       </div>
     </div>
   </section>
@@ -139,7 +115,7 @@
     <div class="projects-carousel">
       <div class="project-card">
         <h3>Análisis del Flujo del Paciente</h3>
-        <p>Optimización de rutas de atención y tiempos de espera en hospitales.</p>
+        <p>Optimización de rutas de atención y tiempos de espera.</p>
         <div class="buttons">
           <a href="https://joch89.github.io/Analisis-del-Flujo-del-Paciente/" target="_blank">Ver Proyecto</a>
           <a href="https://github.com/joch89/Analisis-del-Flujo-del-Paciente" target="_blank">Código</a>
@@ -147,7 +123,7 @@
       </div>
       <div class="project-card">
         <h3>EDA en CMBD GRD 2023 FONASA</h3>
-        <p>Análisis exploratorio de GRD hospitalarios para entender distribución de casos y costos.</p>
+        <p>Análisis exploratorio de GRD hospitalarios.</p>
         <div class="buttons">
           <a href="https://joch89.github.io/EDA-en-CMBD-GRD-2023-FONASA/" target="_blank">Ver Proyecto</a>
           <a href="https://github.com/joch89/EDA-en-CMBD-GRD-2023-FONASA" target="_blank">Código</a>
@@ -166,7 +142,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>© 2025 José Chamorro — Ciencia de Datos en Salud</p>
   </footer>
