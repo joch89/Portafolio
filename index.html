@@ -9,10 +9,27 @@
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Header con menú -->
   <header>
-    <h1>José Chamorro</h1>
-    <p>Kinesiólogo · Quiropráctico · Análisis y Ciencia de Datos en Salud</p>
+    <div class="header-content">
+      <h1>José Chamorro</h1>
+      <p>Kinesiólogo · Quiropráctico · Análisis y Ciencia de Datos en Salud</p>
+    </div>
+    <nav class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">Secciones ▼</button>
+        <div class="dropdown-content">
+          <a href="#about">Sobre mí</a>
+          <a href="#skills">Habilidades</a>
+          <a href="#experience">Experiencia</a>
+          <a href="#education">Educación</a>
+          <a href="#cv">CV</a>
+          <a href="#machine-learning">Machine Learning</a>
+          <a href="#data-analysis">Análisis de Datos</a>
+          <a href="#contact">Contacto</a>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <!-- Sobre mí -->
@@ -74,7 +91,7 @@
   </section>
 
   <!-- CV Descargable -->
-  <section id="cv">
+  <section id="cv" class="compact-section">
     <h2>Currículum Vitae</h2>
     <div class="cv-container">
       <a href="Currículum Jose Chamorro.pdf" target="_blank" class="cv-button">Descargar CV</a>
@@ -82,7 +99,7 @@
   </section>
 
   <!-- Proyectos de Machine Learning -->
-  <section id="machine-learning">
+  <section id="machine-learning" class="compact-section">
     <h2>Proyectos de Machine Learning</h2>
     <div class="projects-container">
 
@@ -191,5 +208,3 @@
 
 </body>
 </html>
-
-
